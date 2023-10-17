@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+section{
+    height: 100svh;
+    width: 100%;
+}
+.head_top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left: 3vw;
+}
+
+.nav{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 3vw;
+    margin-top: 24px;
+}
+
+.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 28px;
+    position: relative;
+    color: #101010;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+
+.nav__link:hover{
+    color: rgb(146, 146, 146);
+}
+
+hr{
+    height: 8px;
+    background-color: black;
+    position: absolute;
+    width: 94vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+}
+
+.name{
+    text-align: center;
+    font-size:200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Второй блок */
+
+.History{
+    background-color: black;
+}
+
+/* Третий блок */
+
