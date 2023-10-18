@@ -84,6 +84,24 @@ hr{
     text-align: center;
 }
 .tem{
-    margin-bottom: 3vh;
-}   
-  
+    width: max-content;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);      
+}
+
+.container{
+    display: inline-block;
+}
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid rgb(0, 0, 0);
+    white-space: nowrap;
+    animation: 
+    typing 1.4s steps(31, end) forwards;
+    font-size:calc(3vw + 8px);
+    width: 0;
+}
+@keyframes typing {
+      rom { width: 0 }
+    to { width: 100% }}
