@@ -105,3 +105,56 @@ hr{
 @keyframes typing {
       rom { width: 0 }
     to { width: 100% }}
+
+/* History */
+
+.persons{
+    margin: auto;
+    margin-top: 3vh;
+    display: flex;
+    color: black;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    width: 96vw;
+}
+
+.person{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    text-align: center;
+    padding: 40px;
+    border-color: black;
+    border-width: 8px;
+    border-style: solid;
+    border-radius: 8px;
+    box-shadow: 0px 1px 10px black;
+}
+
+.FIO{
+    margin: auto;
+    background-color: white;
+    font-size: 40px;
+}
+
+.pesonPhoto{
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px black;
+    margin-top: 10px;
+}
+
+.aboutMe{
+    width: 300px;
+    margin: auto;
+    background-color: white;
+    font-size: 24px;
+    margin-top: 10px;
+}
