@@ -13,33 +13,22 @@ section{
 .head_top{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    width: 94vw;
 }
 
 .logo{
     margin-left: 3vw;
+    font-size: 120px;
+    font-family: 'Raleway', sans-serif;
 }
 
-.nav{
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-right: 3vw;
-    margin-top: 56px;
-}
-
-.nav__link{
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 28px;
+.logoText{
     position: relative;
-    color: #101010;
-    text-decoration: none;
-    transition: color .2s linear;
-}
-
-
-.nav__link:hover{
-    color: rgb(146, 146, 146);
+    left: 3%;
+    font-size: 40px;
+    width:96vw;
+    text-transform: lowercase;
 }
 
 hr{
@@ -53,6 +42,55 @@ hr{
     border: none;
 }
 
+.nav{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.btnOb{
+    all:unset;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    left: 3%;
+    color: #101010;
+    text-decoration: none;
+    transition: color .2s linear;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btnOb:hover{
+    color: rgb(146, 146, 146);
+}
+.nav__link_zero{
+    height: 0px;
+}
+
+.nav__link{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    color: #101010;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+
+.nav__link:hover{
+    color: rgb(146, 146, 146);
+}
+
 .name{
     text-align: center;
     font-size:200px;
@@ -63,16 +101,49 @@ hr{
 }
 
 .introImg{
-    max-width: 1500px;
+    max-width: 1400px;
     width: 100vw;
     height: auto;
     background-repeat: no-repeat;
     background-size: cover ;
     position: relative;
-    margin-top: 50px;
+    margin-top: 5px;
     left: 50%;
     transform: translate(-50%, 0);
 }
+
+@media (max-width: 768px) {
+    .tem {
+      font-size: 10px; /* Уменьшаем размер шрифта на мобильных устройствах */
+    }
+}
+
+@media (min-width: 769px) {
+    .tem {
+        font-weight: 100;
+        font-size: 52px; /* Увеличиваем размер шрифта на планшетах и ноутбуках */
+    }
+}
+
+
+/* Надпись с эффектом печатной машинки */
+.container{
+    display: inline-block;
+}
+.typed-out{
+    overflow: hidden;
+    border-right: 0px solid rgb(255, 255, 255);
+    white-space: nowrap;
+    animation: 
+    typing 1.4s steps(61, end) forwards;
+    font-size:calc(5vh - 5vw +5px);
+    width: 0;
+}
+@keyframes typing {
+      rom { width: 0 }
+    to { width: 100% }}
+
+
 .text{
     width: 72vw;
     height: calc(50vw / 16 * 10);
@@ -84,27 +155,15 @@ hr{
     text-align: center;
 }
 .tem{
-    width: max-content;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);      
+    position: absolute;
+    left: 220px;
+    height: max-content;
+    width: min-content;
+    margin-top: 10px;
+    flex-direction: row;
+    /* position: relative; */
+    /* transform: translate(-50%, 0);       */
 }
-
-.container{
-    display: inline-block;
-}
-.typed-out{
-    overflow: hidden;
-    border-right: .15em solid rgb(0, 0, 0);
-    white-space: nowrap;
-    animation: 
-    typing 1.4s steps(31, end) forwards;
-    font-size:calc(3vw + 8px);
-    width: 0;
-}
-@keyframes typing {
-      rom { width: 0 }
-    to { width: 100% }}
 
 /* History */
 
@@ -114,7 +173,7 @@ hr{
     display: flex;
     color: black;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: flex-start;
     width: 96vw;
 }
@@ -122,7 +181,7 @@ hr{
 .person{
     margin-top: 20px;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 10px  ;
     display: table-cell;
     vertical-align: middle;
     width: 300px;
@@ -130,8 +189,8 @@ hr{
     background-color: white;
     text-align: center;
     padding: 40px;
-    border-color: black;
-    border-width: 8px;
+    border-color: rgba(0, 0, 0, 0.479);
+    border-width: 1px;
     border-style: solid;
     border-radius: 8px;
     box-shadow: 0px 1px 10px black;
@@ -139,8 +198,9 @@ hr{
 
 .FIO{
     margin: auto;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     font-size: 40px;
+    font-family: 'Marck Script', cursive;
 }
 
 .pesonPhoto{
@@ -155,7 +215,8 @@ hr{
 .aboutMe{
     width: 300px;
     margin: auto;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     font-size: 24px;
     margin-top: 10px;
+    font-family: 'Lobster', sans-serif;
 }
